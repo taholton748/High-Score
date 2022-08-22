@@ -1,0 +1,26 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.high-scores {
+    display:inline-block;
+    color: purple;
+}
+.timer {
+    float:right;
+}
+.container {
+    display:block;
+    text-align: center;
+    margin:100px;
+}
+h1 {
+    text-align: center;
+}
+.intro {
+    padding:0px 200px 0px 200px;
+}
+.buttons {
+    margin:25px;
+    color:white;
+    background-color: purple;
+}
