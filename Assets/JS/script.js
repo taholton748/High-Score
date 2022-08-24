@@ -1,3 +1,8 @@
+var mainEl = document.querySelector('.container');
+var submitButton = document.querySelector('#start-quiz');
+var timerEl = document.querySelector('.timer');
+
+var questionIndex = 0;
 var myQuestions = [
     {
         question: "Commonly used data types DO NOT include:",
@@ -51,9 +56,55 @@ var myQuestions = [
     }
 ];
 
-function buildQuiz() {}
-function showResults() {}
+function startQuiz() {
+    mainEl.innerHTML = '';
+    displayQuestion(myQuestions[questionIndex])
+    //displayAnswers()
 
-buildQuiz();
+    //start timer countdown
+    var timeLeft = 75;
+    var quizTimer = setInterval(function(){
+        if(timeLeft <= 0){
+            clearInterval(quizTimer);
+        }
+    }, 1000);
+}
 
-submitButton.addEventListener('click')
+function displayQuestion(questionObj) { //questionObj? where from? function displayAnswers(answersObj)?
+    // increase questionIndex by 1
+    questionIndex = questionIndex + 1;
+
+    // display question and answers
+    var questionH3 = document.createElement('h3') // <h3></h3>
+    questionH3.innerHTML = questionObj.question // <h3>some text here</h3>
+    console.log(questionH3);
+    mainEl.appendChild(questionH3);
+    
+    //create ul dynamically?
+    
+    //var answersli = document.createElement('li')
+    //answersLi.innerHTML = answersObj.answers
+    //console.log(answersLi);
+    //mainEl.appendChild(answersLi);
+
+    //And/Or.....
+
+    //var answersButton = document.createElement("button");
+    //editButtonEl.textContent = "";
+    //editButtonEl.className = "buttons";
+    //editButtonEl.setAttribute();
+    //mainEl.appendChild(answersButton);
+
+    // if correct display "Correct!" and if incorrect display "Wrong!" 
+    // when user clicks a answer take time off if wrong and display next question
+    // check if quiz is over, if over call showResults
+    
+    //if (questionIndex === myQuestions.length) {
+     //   endQuiz();
+       //  return;
+     //}
+};
+
+function endQuiz() {}
+
+submitButton.addEventListener('click', startQuiz)
