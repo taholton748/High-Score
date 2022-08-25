@@ -39,6 +39,8 @@ var myQuestions = [
   },
 ];
 
+submitButton.addEventListener("click", startQuiz);
+
 function startTimer() {
   quizTimer = setInterval(() => {
     timeLeft--;
@@ -104,5 +106,3 @@ function endQuiz() {
   window.location.href = "high-scores.html";
   console.log("end of quiz");
 }
-
-submitButton.addEventListener("click", startQuiz);
