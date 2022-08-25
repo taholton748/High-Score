@@ -13,6 +13,15 @@ https://taholton748.github.io/High-Score/
 ![Here's how it works:](./Assets/Images/04-web-apis-homework-demo.gif)
 
 ## Created with:
+
 - HTML
 - CSS
 - JavaScript
+
+## Contact
+
+<strong>Tyler Holton</strong>
+
+Email: taholton748@yahoo.com
+
+Github: https://github.com/taholton748

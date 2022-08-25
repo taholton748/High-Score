@@ -1,11 +1,15 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.high-scores {
-    display:inline-block;
-    color: purple;
+.header {
+    background-color: purple;
+    padding:30px;
+    color:white;
 }
-.timer {
+.high-scores-link {
+    display:inline-block;
+}
+.timer-style {
     float:right;
 }
 .container {
@@ -23,4 +27,9 @@ h1 {
     margin:25px;
     color:white;
     background-color: purple;
+}
+.high-scores-container {
+    text-align: center;
+    padding:20px;
+    color:purple;
 }
